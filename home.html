@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Welcome to Dynasty House Seafood Restaurant! We are now serving Filipino Style Lechon on Saturdays and Sundays!">
+        <meta name="keywords" content="Seafood, Dim Sum, Chinese, Chinese Restaurant, Dynasty House, Restaurant, North York, Toronto, Food, Bar">
+        <meta name="author" content="Dynasty House Seafood Restaurant">
+        <!---->
+        
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121101365-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-121101365-1');
+        </script>
+        <!---->
+        
+        <title>Dynasty House Seafood Restaurant</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/dh2.css">
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+        <link rel="icon" href="res/dhlogo.png">
+        <link href="https://fonts.googleapis.com/css?family=Sarala" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/dhfunc.js"></script>
+        
+        <script>
+                $(document).ready(function(){
+                    var home = $("#navhome");
+                    var menu = $("#navmenu");
+                    var about = $("#navabout");
+                    var contact = $("#navcontact");
+                    home.animate({
+                        color: "#f88379"
+                    }, 200);
+                    menu.animate({
+                        color: "#f88379"
+                    }, 300);
+                    about.animate({
+                        color: "#f88379"
+                    }, 400);
+                    contact.animate({
+                        color: "#f88379"
+                    }, 450);
+                    contact.animate({
+                        color: "#FFF"
+                    }, 450);
+                    about.animate({
+                        color: "#FFF"
+                    }, 400);
+                    menu.animate({
+                        color: "#FFF"
+                    }, 300);
+                    home.animate({
+                        color: "#FFF"
+                    }, 200);
+                    
+                    home.css("color", "inherit");
+                    menu.css("color", "");
+                });                
+        </script>
+
+    </head>
+    
+
+    <body>
+        <div id="headcontainer">
+            <img src="res/dhmainlogo.png" id="header">
+        </div>
+        <div id="container">
+            <div id="nav">
+                <div id="innernav">
+                	<a href="home.html"><div class="navelem" id="navhome">HOME</div></a>
+                	<a href="menu.html"><div class="navelem" id="navmenu">MENU</div></a>
+                	<a href="about.html"><div class="navelem" id="navabout">ABOUT</div></a>
+                	<a href="contact.html"><div class="navelem" id="navcontact">CONTACT</div></a>
+                </div>
+            </div>
+            <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" style="background-image:url(res/filipinostylelechonslide.jpg);background-size:cover;background-repeat:no-repeat;background-position:center">
+                      <div class="homeslidercaption"><div class="caption"><h1>Filipino Style Lechon</h1><h3>Now serving every Saturday and Sunday</h3></div></div>
+                    </div>
+                  <div class="swiper-slide" style="background-image:url(res/frozendimsumslide.jpg);background-size: cover;background-repeat:no-repeat;background-position:center;">
+                      <div class="homeslidercaption"><div class="caption"><h1>Frozen Dim Sum</h1><h3>Enjoy at our tax included prices!<br>Click <a href="menu.html#frozentab">here</a> for more!</h3></div></div>
+                    </div>
+                  <div class="swiper-slide" style="background-image:url(res/wedding02.jpg);background-size: cover;background-repeat:no-repeat;background-position: center;">
+                      <div class="homeslidercaption"><div class="caption"><h1>Wedding Dinner</h1><h3>Make your night a feast to remember!</h3></div></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+                <div class="swiper-pagination swiper-pagination-white"></div>
+              </div>
+
+
+              <!-- Swiper JS -->
+              <script src="js/swiper.min.js"></script>
+
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper('.swiper-container', {
+                  effect: 'coverflow',
+                  grabCursor: true,
+                  centeredSlides: true,
+                  touchRatio: 2,
+                  coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows : true,
+                  },
+                  autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                  },
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                });
+              </script>
+            <div id="main">
+
+                <div id="collagerow">
+                  <img src="res/filipinostylelechonslide.jpg" class="homeimg" id="cl1" onmouseover="hideallbutthis('cl1')" onmouseout="restorehide()">
+                  <img src="res/frozendimsumslide.jpg" class="homeimg" id="cl2" onmouseover="hideallbutthis('cl2')" onmouseout="restorehide()">
+                  <img src="res/wedding01.jpg" class="homeimg" id="cl3" onmouseover="hideallbutthis('cl3')" onmouseout="restorehide()">
+                  <img src="res/wedding02.jpg" class="homeimg" id="cl4" onmouseover="hideallbutthis('cl4')" onmouseout="restorehide()">
+                </div>
+                
+                
+                
+            </div>
+            <div id="footer">
+                <h4 id="copyright">&copy; Dynasty House Seafood Restaurant <span style="padding-left:3px">2018</span></h4>
+                <h4 id="privacypolicy"><a href="privacy.html">Privacy Policy</a></h4>
+        </div>
+        </div>
+        
+    
+
+    </body>
+</html>

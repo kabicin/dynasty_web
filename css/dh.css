@@ -1,0 +1,768 @@
+/*
+
+
+
+
+Phones
+
+
+
+
+*/
+
+body {
+    /*background-color: whitesmoke;*/
+    background-color: rgb(106, 114, 72);
+    margin: 0;
+    padding: 0px 0px;
+    height: 100%;
+    font-family: 'Sarala', sans-serif;
+    min-width: 480px;
+}
+
+#headernav{
+    height: 100px;
+    background-color: black;
+}
+
+/* Main components - Start*/
+#headcontainer {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    /*max-width: 800px;*/
+    width: 100%;
+}
+
+#container {
+    display: block;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+    width: 100%;
+    /*background-image: url(../res/yellowback.png);
+    background-position: center;
+    */
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+#header {
+    display: inline-block;
+    height: 100px;
+    width: 100%;
+    /*background-color: whitesmoke;*/
+    white-space: nowrap;
+    background-image: url(../res/dhmainlogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main {
+    display:block;
+    width: 100%;
+}
+
+#nav {
+    display: inline-block;
+    position: relative;
+    top: 0.1px;
+    height: 50px;
+    width: 100%;
+    /*background-color: lightgrey;*/
+    background-image: url(../res/firegradient.png);
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+
+}
+
+
+#footer {
+    display: absolute;
+    height: 50px;
+    bottom: 0;
+}
+
+/* Main components - End*/
+
+
+/* Header components - Start*/
+#dhlogo {
+    display: inline;
+    height: 100px;
+    width: auto;
+    padding: 25px 0 25px 25px;
+}
+
+#dhmainlogo{
+    display: inline;
+    height: 100px;
+    width: auto;
+    padding: 25px 0;
+}
+
+
+/* Header components - End*/
+
+
+/* Nav components - Start*/
+.navelem {
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    line-height: 5px;
+    font-size: 1em;
+    width: 24%;
+    margin: 0;
+    text-align: center;
+
+}
+#nav a{
+    text-decoration: none;
+}
+
+#nav a:hover{
+    color: coral;
+}
+
+.navelem a:link, a:visited, a:active{
+    color: white;
+}
+
+
+/* Nav components - End*/
+.homeimg{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    box-shadow: 2px 2px grey;
+
+}
+
+/* Main components - Start*/
+#navheader{
+    margin: 0px;
+    margin-left: 5%;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.dhmenu, .dhmenustart{
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    box-shadow: 2px 2px grey;
+}
+
+.dhmenustart{
+    margin-top: 10px;
+}
+
+.menuheader{
+    display: block;
+    margin: 0 10px;
+    background-color: black;
+    border-radius: 5px;
+    border-bottom: 0.5px solid white;
+    border-top: 0.5px solid white;
+    white-space: nowrap;
+}
+
+
+
+#frozenheader, #partytrayheader{
+    /*
+    margin: 0;
+    padding-left: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    */
+}
+
+.menuheadertitle {
+    display: inline;
+    margin-left: 10px;
+
+}
+
+
+.menua{
+    text-decoration: none;
+}
+
+.menua:link, .menua:visited, .menua:active{
+    color: white;
+
+}
+
+.menua:hover{
+    color: greenyellow;
+}
+.menuheader:hover{
+    border-top-color: greenyellow;
+    border-bottom-color: greenyellow;
+}
+
+
+
+
+#dhmenudi{
+    display: none;
+
+    /*background-color: rgb(85, 93, 80);*/
+    /*background-color: rgb(191, 79, 20);*/
+    background-color: black;
+    font-size: 0.85em;
+    line-height: 13px;
+    margin: 0;
+}
+
+#dhmenuto, #dhmenuf, #dhmenub, #dhmenupt{
+    display: none;
+    font-size: 0.9em;
+    /* background-color: rgb(85, 93, 80); */
+    /* background-color: rgb(191, 79, 20); */
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+#dhmenub p, #dhmenuf p{
+    margin-left: 30px;
+}
+
+#bbqannot
+{
+    display: inline-block;
+    color: whitesmoke;
+    padding: 5% 0;
+    position: relative;
+    top: -35px;
+}
+
+#frozenannot{
+    display: inline-block;
+    color: whitesmoke;
+    position: relative;
+    top: -20px;
+    left: 0px;
+    font-size: 0.85em;
+    width: 150px;
+}
+
+.frozenimg
+{
+    width: auto;
+    height: 100px;
+}
+
+.bbqimg{
+    /*width: 380px;*/
+    width: 40%;
+    /*height: 300px;*/
+    height: 10%;
+    border: 1px solid black;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+#frozennotif
+{
+    background-color: darkslategrey;
+    height: 40px;
+    width: 100%;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    border-radius: 25px;
+}
+
+#bbqnotif{
+    background-color: darkslategrey;
+    height: 60px;
+    width: 100%;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+#frozenbanner,
+#bbqbanner{
+    color: chartreuse;
+    position: relative;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.frozenprice,
+.bbqprice{
+    color: chartreuse;
+    font-weight: bold;
+}
+
+.bbqnotif{
+    color: darkorange;
+    font-weight: 700;
+}
+
+.bbqcontainer{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.frozencontainer{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.frozensubcontainer{
+    display: inline;
+    width: 50%;
+    float: left;
+}
+.dineinimg{
+    width: auto;
+    height: 100px;
+}
+.dineinrow{
+    display: inline-block;
+    height: 180px;
+    width: 100%;
+    margin: 0px 1px;
+}
+
+
+
+.dineinelem{
+    display: inline;
+    float: left;
+    width: 33.33333333333333333%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.borderright{
+    border-right: 0.2px solid white;
+}
+
+.bordertop{
+    border-top: 0.2px solid white;
+}
+
+.borderbottom{
+    border-bottom: 0.2px solid white;
+}
+
+.dineinhead{
+    margin-top: 38px;
+}
+
+.dineinrow a{
+    color: white;
+    text-decoration: none;
+}
+.dineinelem:hover{
+    color: chartreuse;
+    background-color: darkslategrey;
+}
+
+#contactaddressmap{
+    display: inline-block;
+    height: 500px;
+    width: 100%;
+}
+
+#contactaddress{
+    display: inline-block;
+    position: relative;
+    top: -60px;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+#contactaddresselem{
+    line-height: 20px;
+    height: 25%;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+}
+
+#contactcontainer{
+    display: inline-block;
+    width: 100%;
+}
+
+#contacthours{
+    display: inline;
+    float:left;
+    margin: 0 auto;
+    width: 60%;
+    position: relative;
+    left: 25px;
+}
+
+#contactother, #contactparking{
+    display: inline;
+    float: left;
+    width: 40%;
+    position: relative;
+    right: 20px;
+}
+
+#contactparking{
+    position: relative;
+
+}
+
+
+td {
+    padding: 5px;
+    padding-right: 20px;
+}
+
+.triangleside, .triangledown {
+    margin-left: 20px;
+}
+
+.triangleside{
+    display: inline-block;
+}
+
+.triangledown {
+    display: none;
+}
+
+.aboutus{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+/* Main components - End*/
+
+
+
+/* Footer components - Start*/
+#copyright {
+    font-size: 0.8em;
+    text-align: left;
+    margin: 20px 0;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+
+/*
+
+Tablet
+
+*/
+
+@media only screen and (min-width: 768px) {
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Main components - Start*/
+#headcontainer {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /*max-width: 800px;*/
+}
+
+#container {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    /*max-width: 800px;*/
+
+}
+
+
+
+#main {
+    display:block;
+    width: 100%;
+}
+
+
+
+#footer {
+    display: absolute;
+    height: 50px;
+    bottom: 0;
+}
+
+/* Main components - End*/
+
+
+/* Header components - Start*/
+
+/* Header components - End*/
+
+
+/* Nav components - Start*/
+.navelem {
+    width: 24%;
+}
+
+
+/* Nav components - End*/
+.homeimg {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    box-shadow: 2px 2px grey;
+}
+
+/* Main components - Start*/
+
+
+
+
+/* Main components - End*/
+
+
+
+/* Footer components - Start*/
+#copyright {
+    font-size: 0.8em;
+    text-align: left;
+    margin: 20px 0;
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+
+}
+}
+
+
+
+/*
+
+
+Landscape tablets
+
+
+*/
+@media only screen and (min-width: 768px) {
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+/* Main components - Start*/
+#headcontainer {
+    display: block;
+    height: 100%;
+    /*width: 768px;*/
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#container {
+    display: block;
+    height: 100%;
+    /*width: 768px;*/
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+
+
+#main {
+    display:block;
+    width: 100%;
+}
+
+#footer {
+    display: absolute;
+    height: 50px;
+    bottom: 0;
+}
+
+/* Main components - End*/
+
+
+/* Header components - Start*/
+
+/* Header components - End*/
+
+
+/* Nav components - Start*/
+
+/* Nav components - End*/
+.homeimg {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    box-shadow: 2px 2px grey;
+
+}
+
+/* Main components - Start*/
+
+
+
+
+/* Main components - End*/
+
+
+
+/* Footer components - Start*/
+#copyright {
+    font-size: 0.8em;
+    text-align: left;
+    margin: 20px 0;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+}
+
+/*
+
+
+Laptops and desktops
+
+
+*/
+@media only screen and (min-width: 992px) {
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Main components - Start*/
+#headcontainer {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /*width: 800px;*/
+}
+
+#container {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /*width: 90%;*/
+    background-color: antiquewhite;
+}
+
+
+
+#main {
+    display:block;
+    width: 100%;
+}
+
+
+#footer {
+    display: absolute;
+    height: 50px;
+    bottom: 0;
+}
+
+/* Main components - End*/
+
+
+/* Header components - Start*/
+
+/* Header components - End*/
+
+
+/* Nav components - Start*/
+
+
+
+/* Nav components - End*/
+.homeimg {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    box-shadow: 2px 2px grey;
+
+}
+
+/* Main components - Start*/
+
+
+
+
+/* Main components - End*/
+
+
+
+/* Footer components - Start*/
+#copyright {
+    font-size: 0.8em;
+    text-align: left;
+    margin: 20px 0;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+/* Footer components - End*/
+}
+
+/*
+
+
+Large laptops and desktops
+
+
+*/
+/*@media only screen and (min-width: 1280px) {
+
+
+}
+*/
