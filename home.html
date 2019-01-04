@@ -8,7 +8,7 @@
         <meta name="keywords" content="Seafood, Dim Sum, Chinese, Chinese Restaurant, Dynasty House, Restaurant, North York, Toronto, Food, Bar">
         <meta name="author" content="Dynasty House Seafood Restaurant">
         <!---->
-        
+
         <!-- Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121101365-1"></script>
         <script>
@@ -18,9 +18,9 @@
           gtag('config', 'UA-121101365-1');
         </script>
         <!---->
-        
+
         <title>Dynasty House Seafood Restaurant</title>
-        
+
         <link rel="stylesheet" type="text/css" href="css/dh2.css">
         <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 
@@ -29,9 +29,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script type="text/javascript" src="js/dhfunc.js"></script>
-        
+
         <script>
                 $(document).ready(function(){
+                    var parent = $('#innernav');
                     var home = $("#navhome");
                     var menu = $("#navmenu");
                     var about = $("#navabout");
@@ -57,17 +58,32 @@
                     menu.animate({
                         color: "#FFF"
                     }, 300);
-                    home.animate({
-                        color: "#FFF"
-                    }, 200);
-                    
+                    if(parent.find('#navhome:hover').length){
+                      home.animate({
+                          color: "#FFF"
+                      }, 200);
+                    }
+
+                    home.hover(function(){
+                        home.animate({
+                            color: "#f88379"
+                        }, 200);
+                    }, function(){
+                      home.animate({
+                          color: "#FFF"
+                      }, 200);
+                    });
+                    home.on('click', function(){
+                      $(this).trigger("hover");
+                    })
+
                     home.css("color", "inherit");
                     menu.css("color", "");
-                });                
+                });
         </script>
 
     </head>
-    
+
 
     <body>
         <div id="headcontainer">
@@ -139,17 +155,17 @@
                   <img src="res/wedding01.jpg" class="homeimg" id="cl3" onmouseover="hideallbutthis('cl3')" onmouseout="restorehide()">
                   <img src="res/wedding02.jpg" class="homeimg" id="cl4" onmouseover="hideallbutthis('cl4')" onmouseout="restorehide()">
                 </div>
-                
-                
-                
+
+
+
             </div>
             <div id="footer">
-                <h4 id="copyright">&copy; Dynasty House Seafood Restaurant <span style="padding-left:3px">2018</span></h4>
+                <h4 id="copyright">&copy; Dynasty House Seafood Restaurant. <span style="padding-left:3px">2019.</span></h4>
                 <h4 id="privacypolicy"><a href="privacy.html">Privacy Policy</a></h4>
         </div>
         </div>
-        
-    
+
+
 
     </body>
 </html>

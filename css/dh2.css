@@ -10,7 +10,6 @@ body{
     min-height:100%; 
     display: flex;
     flex-direction: column;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffbf00+0,000000+100 */
     background-color: rgb(255, 191, 0);
 }
 
@@ -135,6 +134,8 @@ body{
     text-align: center;
     padding: 0px 5% 0px 5%;
 }
+
+
 #main{
 	  margin: 0 20px;
       padding: 0;
@@ -189,7 +190,6 @@ body{
 
 
 #contactaddress{
-
     display: inline-block;
     width: 50%;
 		min-width: 305px;
@@ -199,15 +199,6 @@ body{
 		white-space: nowrap;
 		margin: 0 auto;
 }
-
-/*
-#contactmapbar{
-		min-width: 305px;
-		font-size: 0.7em;
-		text-align: right;
-		line-height: 0px;
-}
-*/
 
 #viewonmaps{
 	background-color: white;
